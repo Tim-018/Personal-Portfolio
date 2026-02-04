@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Personal Portfolio</title>
 </head>
@@ -21,13 +22,13 @@
 <hr>
 
   <!-- Image and Name -->
-  <section>
-    <img src="img/MyPhoto.jpg" alt="My Photo" width="200">
+  <section class="my-photo">
+    <img src="img/MyPhoto.jpg" alt="My Photo" class="profile-img">
     <h1>Altheamay Timothy Ramos Bonzo</h1>
   </section>
 
   <!-- About Me -->
-  <section id="aboutme">
+  <section id="about-me" class="soft-section">
     <h2>About Me</h2>
     <p>
         I am currently taking a Bachelor of Science in Information Technology,
@@ -41,75 +42,84 @@
     <a href="resume.html#about-me" class="see-more-btn">See More</a>
   </section>
 
-  <!-- Contacts -->
-  <section>
+<!-- Contact & Skills -->
+<section class="two-column-section">
+
+  <!-- CONTACT -->
+  <div class="column">
     <h2>Contact Me</h2>
 
-    <p>
-        <img src="img/gmail.png" alt="Email icon" class="icon">
-        tiya0618tim@gmail.com
-    </p>
-    <p>
-        <img src="img/phone.png" alt="Phone icon" class="icon">
-        +63 976 437 1872
-    </p>
-    <p>
-        <img src="img/facebook.png" alt="Facebook icon" class="icon">
-        <a href="https://www.facebook.com/teyaaa.tim18/" target="_blank">
-        www.facebook.com/teyaaa.tim18/
-    </a>
-    </p>
-    <p>
-        <img src="img/telegram.png" alt="Telegram icon" class="icon">
-        <a href="tg://resolve?domain=Timothy0618">@Timothy0618</a>
-    </p>
-  </section>
+    <div class="contact-list">
+        <div class="contact-card">
+            <img src="img/gmail.png" class="icon">
+            <span>tiya0618tim@gmail.com</span>
+        </div>
 
-  <!-- Skills -->
-    <section id="skills">
-        <h2>Skills</h2>
+        <div class="contact-card">
+            <img src="img/phone.png" class="icon">
+            <span>+63 976 437 1872</span>
+        </div>
 
-        <p>HTML</p>
-        <progress value="50" max="100"></progress>
+        <div class="contact-card">
+            <img src="img/facebook.png" class="icon">
+            <a href="https://www.facebook.com/teyaaa.tim18/" target="_blank">
+                facebook.com/teyaaa.tim18
+            </a>
+        </div>
 
-        <p>CSS</p>
-        <progress value="40" max="100"></progress>
+        <div class="contact-card">
+            <img src="img/telegram.png" class="icon">
+            <a href="tg://resolve?domain=Timothy0618">@Timothy0618</a>
+        </div>
+    </div>
+  </div>
 
-        <p>JavaScript</p>
-        <progress value="20" max="100"></progress>
-        <p>SQL</p>
-        <progress value="60" max="100"></progress>
-    </section>
-     <a href="resume.html#skills" class="see-more-btn">See More</a>
+  <!-- SKILLS -->
+  <div class="column">
+    <h2>Skills</h2>
 
+    <p>HTML</p>
+    <progress value="50" max="100"></progress>
+
+    <p>CSS</p>
+    <progress value="40" max="100"></progress>
+
+    <p>JavaScript</p>
+    <progress value="20" max="100"></progress>
+
+    <p>SQL</p>
+    <progress value="50" max="100"></progress>
+
+    <a href="resume.html#skills" class="see-more-btn">More Skills</a>
+  </div>
+
+</section>
+
+</section>
     <!-- Certificates -->
-    <section id="certificates">
+    <section id="certificates" class="soft-section">
     <h2>Certificates</h2>
 
     <div class="grid">
         <div class="box"><img src="img/cert1.jpg" alt="Certificate 1"></div>
         <div class="box"><img src="img/cert2.jpg" alt="Certificate 2"></div>
         <div class="box"><img src="img/cert3.jpg" alt="Certificate 3"></div>
-        <div class="box"><img src="img/cert4.jpg" alt="Certificate 4"></div>
-        <div class="box"><img src="img/cert5.jpg" alt="Certificate 5"></div>
-        <div class="box"><img src="img/cert6.jpg" alt="Certificate 6"></div>
+
     </div>
 
-    <a href="projects.html#certifiactes" class="see-more-btn">More Certificates</a>
+    <a href="resume.html#certificates" class="see-more-btn">More Certificates</a>
     
     </section>
 
-        <!-- Projects -->
-    <section id="projects">
+    <!-- Projects -->
+    <section id="projects" class="soft-section">
     <h2>Projects</h2>
 
     <div class="grid">
         <div class="box"><img src="img/cert1.jpg" alt="Projects 1"></div>
         <div class="box"><img src="img/cert2.jpg" alt="Projects 2"></div>
         <div class="box"><img src="img/cert3.jpg" alt="Projects 3"></div>
-        <div class="box"><img src="img/cert4.jpg" alt="Projects 4"></div>
-        <div class="box"><img src="img/cert5.jpg" alt="Projects 5"></div>
-        <div class="box"><img src="img/cert6.jpg" alt="Projects 6"></div>
+
     </div>
 
     <a href="projects.html#projects-section" class="see-more-btn">More Projects</a>

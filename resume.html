@@ -20,18 +20,21 @@
 
 <!-- TOP INFO -->
 <section class="top-info">
-  <div class="info-text">
-    <h2>Personal Information</h2>
-        <p><strong>Full Name:</strong> Altheamay Timothy Ramos Bonzo</p>
-        <p><strong>Age:</strong> 21</p>
-        <p><strong>Gender:</strong> Female</p>
-        <p><strong>Status:</strong> Single</p>
-        <p><strong>Course:</strong> Bachelor of Science in Information Technology</p>
-        <p><strong>Major:</strong> Web Technology</p>
-        <p><strong>Nationality:</strong> Filipino</p>
-        <p><strong>Address:</strong> #03e, Upper Apugan, Sto. Tomas School Area, Baguio City</p>
+<div class="info-text">
+  <h2>Personal Information</h2>
 
-  </div>
+  <ul class="personal-info">
+    <li><span>Full Name</span><strong>Altheamay Timothy Ramos Bonzo</strong></li>
+    <li><span>Age</span><strong>21</strong></li>
+    <li><span>Gender</span><strong>Female</strong></li>
+    <li><span>Status</span><strong>Single</strong></li>
+    <li><span>Course</span><strong>Bachelor of Science in Information Technology</strong></li>
+    <li><span>Major</span><strong>Web Technology</strong></li>
+    <li><span>Nationality</span><strong>Filipino</strong></li>
+    <li><span>Address</span><strong>#03e, Upper Apugan, Sto. Tomas School Area, Baguio City</strong></li>
+  </ul>
+</div>
+
 
   <div class="profile-photo">
     <img src="img/MyPhoto.jpg" alt="Profile">
@@ -41,122 +44,168 @@
 <!-- ABOUT ME -->
 <section id="about-me">
   <h3>About Me</h3>
+
+  <div class="about-card">
     <p>
-            I am currently taking a Bachelor of Science in Information Technology,
-        majoring in Web Technology. I have a strong interest in designing and
-        developing user-friendly, responsive, and visually appealing websites.
-        Through my academic projects, I have gained experience in using basic web
-        technologies such as HTML, CSS, and JavaScript to build functional web
-        pages.
-            As a web technology student, I am focused on continuously improving my
-        technical skills and understanding modern development tools and best
-        practices in web development. I enjoy solving problems, learning new
-        concepts, and applying them to real-world projects. My goal is to grow as a
-        web developer and create meaningful digital experiences that are both
-        efficient and user-centered.
+      I am currently taking a Bachelor of Science in Information Technology,
+      majoring in Web Technology. I have a strong interest in designing and
+      developing user-friendly, responsive, and visually appealing websites.
+      Through my academic projects, I have gained experience in using basic web
+      technologies such as HTML, CSS, and JavaScript to build functional web
+      pages.
+      <br><br>
+      As a web technology student, I am focused on continuously improving my
+      technical skills and understanding modern development tools and best
+      practices in web development. I enjoy solving problems, learning new
+      concepts, and applying them to real-world projects. My goal is to grow as a
+      web developer and create meaningful digital experiences that are both
+      efficient and user-centered.
     </p>
+  </div>
 </section>
 
 <!-- CONTACTS -->
-    <p>
-<section>
-    <h3>Contacts</h3>
-        <img src="img/gmail.png" alt="Email icon" class="icon">
-        tiya0618tim@gmail.com
-    </p>
-    <p>
-        <img src="img/phone.png" alt="Phone icon" class="icon">
-        +63 976 437 1872
-    </p>
-    <p>
-        <img src="img/facebook.png" alt="Facebook icon" class="icon">
-        <a href="https://www.facebook.com/teyaaa.tim18/" target="_blank">
-        www.facebook.com/teyaaa.tim18/
-    </a>
-    </p>
-    <p>
-        <img src="img/telegram.png" alt="Telegram icon" class="icon">
-        <a href="tg://resolve?domain=Timothy0618">@Timothy0618</a>
-    </p>
-  </section>
+<section id="contacts">
+  <h3>Contacts</h3>
+
+  <div class="contact-list two-col">
+    <div class="contact-card">
+      <img src="img/gmail.png" class="icon">
+      <span>tiya0618tim@gmail.com</span>
+    </div>
+
+    <div class="contact-card">
+      <img src="img/phone.png" class="icon">
+      <span>+63 976 437 1872</span>
+    </div>
+
+    <div class="contact-card">
+      <img src="img/facebook.png" class="icon">
+      <a href="https://www.facebook.com/teyaaa.tim18/" target="_blank">
+        facebook.com/teyaaa.tim18
+      </a>
+    </div>
+
+    <div class="contact-card">
+      <img src="img/telegram.png" class="icon">
+      <a href="tg://resolve?domain=Timothy0618">@Timothy0618</a>
+    </div>
+  </div>
+</section>
+
+
 
 <!-- SKILLS -->
-<section class="two-column" id="skills">
-  <h2>Skills</h2>
-<div>
-<ul>
-  <p>HTML</p>
-  <progress value="50" max="100"></progress>
-  <p>CSS</p>
-  <progress value="40" max="100"></progress>
-  <p>JavaScript</p>
-  <progress value="20" max="100"></progress>
-  <p>SQL</p>
-  <progress value="60" max="100"></progress>
-</ul>
-</div>
-<div>
-<ul>
+<section id="skills">
+  <h3>Skills</h3>
+
+  <div class="skills-grid">
+    <div class="skill-item">
+      <p>HTML</p>
+      <progress value="50" max="100"></progress>
+    </div>
+
+    <div class="skill-item">
+      <p>CSS</p>
+      <progress value="40" max="100"></progress>
+    </div>
+
+    <div class="skill-item">
+      <p>JavaScript</p>
+      <progress value="20" max="100"></progress>
+    </div>
+
+    <div class="skill-item">
+      <p>SQL</p>
+      <progress value="60" max="100"></progress>
+    </div>
+  </div>
+</section>
+
+
+<!-- OTHER SKILLS -->
+<section>
+  <h3>Other Skills</h3>
+  <ul class="soft-list">
     <li>Responsive Web Design</li>
     <li>UI/UX Basics</li>
-    <li>Flexbox and Basic CSS Grid</li>
-    <li>Basic Git and GitHub</li>
-    <li>Debugging HTML and CSS</li>
+    <li>Flexbox & CSS Grid</li>
+    <li>Basic Git & GitHub</li>
+    <li>Debugging HTML & CSS</li>
     <li>Problem Solving</li>
     <li>Team Collaboration</li>
     <li>Time Management</li>
-</ul>
-</div>
+    <li>Attention to Detail</li>
+    <li>Continuous Learning</li>
+
+  </ul>
 </section>
 
 <!-- INTEREST & HOBBIES -->
-<section class="two-column">
-  <div>
-    <h3>Interest</h3>
-      <p>Website Design and Development</p>
-      <p>Creative Web Layouts</P>
-      <p>UI / UX Design</P>
-      <p>Problem Solving</p>
-      <p>Learning New Technologies</p>
-  </div>
+<section class="interest-hobbies">
+  <h3>Interests & Hobbies</h3>
 
-  <div>
-    <h3>Hobbies</h3>
-      <p>Designing graphics and posters</p>
-      <p>Watching movies and series</p>
-      <p>Exploring social media trends</p>
-      <p>Listening to music</p>
-      <p>Trying new apps and websites</p>
+  <div class="interest-grid">
+    <div class="interest-card">
+      <h4>Interests</h4>
+      <ul class="interest-list">
+        <li><i class="fas fa-code"></i> Website Design and Development</li>
+        <li><i class="fas fa-palette"></i> Creative Web Layouts</li>
+        <li><i class="fas fa-object-ungroup"></i> UI / UX Design</li>
+        <li><i class="fas fa-puzzle-piece"></i> Problem Solving</li>
+        <li><i class="fas fa-graduation-cap"></i> Learning New Technologies</li>
+      </ul>
+    </div>
+
+    <div class="interest-card">
+      <h4>Hobbies</h4>
+      <ul class="hobby-list">
+        <li><i class="fas fa-paint-brush"></i> Designing graphics and posters</li>
+        <li><i class="fas fa-film"></i> Watching movies and series</li>
+        <li><i class="fas fa-hashtag"></i> Exploring social media trends</li>
+        <li><i class="fas fa-music"></i> Listening to music</li>
+        <li><i class="fas fa-mobile-alt"></i> Trying new apps and websites</li>
+      </ul>
+    </div>
   </div>
 </section>
+
 
 <!-- EXPERIENCE -->
-<section>
+<section class="experience">
   <h3>Experience</h3>
 
-  <dl>
-    <dt><strong>Sales Representative (Part-Time)</strong></dt>
-    <dd>Hearthmed Medical Supplies Trading</dd>
-    <dd>
-      Managing online shop listings, assisting customers, and packing orders.
-    </dd>
-  </dl>
+  <div class="experience-list">
+    <div class="experience-card">
+      <div class="exp-header">
+        <h4>Sales Representative (Part-Time)</h4>
+        <span class="exp-date">1 Month</span>
+      </div>
+
+      <p class="exp-company">Hearthmed Medical Supplies Trading</p>
+      <ul class="exp-desc">
+        <li>Managed online shop listings and product updates</li>
+        <li>Assisted customers through chat and order inquiries</li>
+        <li>Packed and prepared orders for delivery</li>
+      </ul>
+    </div>
+  </div>
 </section>
-
-
 
 <!-- CERTIFICATES -->
-<section>
+<section class="certificates">
   <h3>Certificates</h3>
-    <div class="grid">
-        <div class="box"><img src="img/cert1.jpg" alt="Certificate 1"></div>
-        <div class="box"><img src="img/cert2.jpg" alt="Certificate 2"></div>
-        <div class="box"><img src="img/cert3.jpg" alt="Certificate 3"></div>
-        <div class="box"><img src="img/cert4.jpg" alt="Certificate 4"></div>
-        <div class="box"><img src="img/cert5.jpg" alt="Certificate 5"></div>
-        <div class="box"><img src="img/cert6.jpg" alt="Certificate 6"></div>
-    </div>
+
+  <div class="cert-grid">
+    <div class="cert-card"><img src="img/cert1.jpg" alt="Certificate 1"></div>
+    <div class="cert-card"><img src="img/cert2.jpg" alt="Certificate 2"></div>
+    <div class="cert-card"><img src="img/cert3.jpg" alt="Certificate 3"></div>
+    <div class="cert-card"><img src="img/cert4.jpg" alt="Certificate 4"></div>
+    <div class="cert-card"><img src="img/cert5.jpg" alt="Certificate 5"></div>
+    <div class="cert-card"><img src="img/cert6.jpg" alt="Certificate 6"></div>
+  </div>
 </section>
+
 
 <footer>
   <p>© 2026 Altheamay Timothy Ramos Bonzo</p>
