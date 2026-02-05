@@ -1,4 +1,4 @@
-/* ================= RESET ================= */
+/* ================= MAIN ================= */
 * {
   margin: 0;
   padding: 0;
@@ -17,19 +17,20 @@ body {
 
 /* ================= TEXT ================= */
 h1 {
-  font-size: 32px;
+  font-size: 36px;
   margin-top: 15px;
   font-weight: 600;
   color: #ffffff;
 }
 
 h2, h3 {
+  font-size: 28px;
   color: #cfe8ff;
   font-weight: 600;
 }
 
 p {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 1.8;
 }
@@ -41,19 +42,24 @@ header {
 }
 
 .main-nav {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 35px;
+  margin: 0 auto;
 }
 
 .nav-link {
-  margin: 0 12px;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
+  margin: 0;
+  padding: 14px 35px;
+  font-weight: 600;
+  color: #ffffff;
   border-radius: 30px;
   background: linear-gradient(135deg, #0f5ea8, #0a2a66);
   box-shadow: 0 3px 8px rgba(10,42,102,0.5);
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .nav-link:hover {
@@ -67,9 +73,9 @@ header {
 
 /* ================= SECTIONS ================= */
 section {
-  max-width: 900px;
+  max-width: 1300px;
   margin: 50px auto;
-  padding: 0 20px;
+  padding: 0 12px;
 }
 
 /* ================= HOME PHOTO ================= */
@@ -135,6 +141,7 @@ section {
 
 /* PERSONAL INFO */
 .personal-info {
+  font-size: 20px;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -149,17 +156,17 @@ section {
 
 
 .personal-info span {
-  font-size: 12px;
+  font-size: 18px;
   text-transform: uppercase;
   opacity: 0.7;
 }
 
 .personal-info strong {
-  font-size: 15px;
+  font-size: 16px;
   color: #eaf6ff;
 }
 
-/* ABOUT ME */
+/* ABOUT ME for RESUME */
 #about-me h3,
 #contacts h3,
 #skills h3 {
@@ -174,7 +181,7 @@ section {
   border-radius: 20px;
 }
 
-/* CONTACTS */
+/* CONTACTS for RESUME */
 .contact-list {
   max-width: 700px;
   margin: 0 auto;
@@ -219,7 +226,7 @@ section {
 }
 .soft-list li {
   padding: 10px 18px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   color: #eaf6ff;
 
@@ -253,6 +260,10 @@ section {
   padding: 16px 20px;
   border-radius: 16px;
 }
+progress {
+  width: 100%;
+  height: 10px;
+}
 
 /* EXPERIENCE */
 .experience {
@@ -265,6 +276,46 @@ section {
   border-radius: 22px;
 }
 
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+
+}
+
+.exp-date {
+  color: #cfe8ff;
+  font-size: 20px;
+}
+
+.exp-company {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: #cfe8ff;
+}
+
+.exp-desc {
+  margin-top: 16px;
+}
+
+.exp-desc p {
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.6;
+  font-size: 16px;
+
+}
+
+.exp-desc p:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #00c6ff;
+}
 /* ================= INTEREST & HOBBIES ================= */
 .interest-hobbies {
   margin-top: 60px;
@@ -300,7 +351,7 @@ section {
     grid-template-columns: 1fr;
   }
 }
-/* RESPONSIVE – RESUME */
+/* RESPONSIVE for RESUME */
 @media (max-width: 768px) {
   .top-info {
     flex-direction: column;
@@ -331,12 +382,6 @@ section {
 .contact-item a {
   color: #cfe8ff;
   text-decoration: none;
-}
-
-/* ================= SKILLS ================= */
-progress {
-  width: 100%;
-  height: 10px;
 }
 
 /* ================= CERTIFICATES & PROJECT GRID ================= */
@@ -373,6 +418,7 @@ progress {
   object-fit: cover;
   display: block;
 }
+
 .cert-card {
   overflow: hidden;
 }
@@ -383,52 +429,6 @@ progress {
 
 .cert-card:hover img {
   transform: scale(1.2);
-}
-/* ================= EXPERIENCE ================= */
-.experience {
-  margin-top: 60px;
-}
-
-.experience-card {
-  background: rgba(255,255,255,0.08);
-  padding: 26px 30px;
-  border-radius: 22px;
-}
-
-.exp-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.exp-date {
-  color: #cfe8ff;
-  font-size: 14px;
-}
-
-.exp-company {
-  font-weight: 500;
-  margin-bottom: 16px;
-  color: #cfe8ff;
-}
-
-.exp-desc {
-  margin-top: 16px;
-}
-
-.exp-desc p {
-  margin-bottom: 8px;
-  padding-left: 20px;
-  position: relative;
-  line-height: 1.6;
-}
-
-.exp-desc p:before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #00c6ff;
 }
 /* ================= PROJECT CATEGORY ================= */
 /* PROJECT IMG ZOOM EFFECT */
@@ -468,12 +468,18 @@ progress {
   background: #0f5ea8;
   transition: all 0.3s ease;
 }
-
 /*  HOVER  */
 .category-btn:hover {
   background: #00c6ff;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 198, 255, 0.4);
+}
+.project-labels {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 30px;
 }
 
 /* ================= FOOTER ================= */
@@ -494,13 +500,13 @@ footer p {
 
 /* COPYRIGHT */
 footer p:first-child {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 500;
 }
 
 /* TAGLINE */
 footer p:nth-child(2) {
-  font-size: 14px;
+  font-size: 15px;
   opacity: 0.8;
   margin-top: 8px;
 }
