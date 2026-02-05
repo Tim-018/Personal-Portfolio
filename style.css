@@ -29,6 +29,7 @@ h2, h3 {
 }
 
 p {
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.8;
 }
@@ -80,9 +81,21 @@ section {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid rgba(255,255,255,0.6);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 
+    0 0 20px rgba(0, 198, 255, 0.6),
+    0 0 40px rgba(0, 198, 255, 0.3),
+    0 15px 35px rgba(0,0,0,0.4);
+}
+
+.profile-photo img:hover {
+  transform: scale(1.03);
+  box-shadow: 
+    0 0 20px rgba(0, 198, 255, 0.6),
+    0 0 40px rgba(0, 198, 255, 0.3),
+    0 15px 35px rgba(0,0,0,0.4);
 }
 
 /* ================= TWO COLUMN (INDEX) ================= */
@@ -277,7 +290,7 @@ section {
 
 .interest-list p, .hobby-list p {
   margin-bottom: 8px;
-  padding-left: 20px; /* Simple indent */
+  padding-left: 20px;
   line-height: 1.6;
 }
 
@@ -360,6 +373,17 @@ progress {
   object-fit: cover;
   display: block;
 }
+.cert-card {
+  overflow: hidden;
+}
+
+.cert-card img {
+  transition: transform 0.4s ease;
+}
+
+.cert-card:hover img {
+  transform: scale(1.2);
+}
 /* ================= EXPERIENCE ================= */
 .experience {
   margin-top: 60px;
@@ -395,7 +419,7 @@ progress {
 
 .exp-desc p {
   margin-bottom: 8px;
-  padding-left: 20px; /* Creates the indent */
+  padding-left: 20px;
   position: relative;
   line-height: 1.6;
 }
@@ -407,11 +431,31 @@ progress {
   color: #00c6ff;
 }
 /* ================= PROJECT CATEGORY ================= */
-.project-labels {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+/* PROJECT IMG ZOOM EFFECT */
+.project-box {
+  overflow: hidden;
+  border-radius: 14px;
+  position: relative;
+}
+
+.project-box img {
+  transition: transform 0.3s ease;
+}
+
+.project-box:hover img {
+  transform: scale(1.2);
+}
+
+/*DARK OVERLAY HOVER */
+.project-box:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 14px;
 }
 
 /* PROJECT BUTTONS */
@@ -432,7 +476,8 @@ progress {
   box-shadow: 0 5px 15px rgba(0, 198, 255, 0.4);
 }
 
-/* ================= FOOTER (FIXED) ================= */
+/* ================= FOOTER ================= */
+/* FOOTER STYLING */
 footer {
   margin-top: 80px;
   padding: 30px 20px;
@@ -442,6 +487,29 @@ footer {
   border-radius: 25px 25px 0 0;
 }
 
+footer p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* COPYRIGHT */
+footer p:first-child {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* TAGLINE */
+footer p:nth-child(2) {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 8px;
+}
+
+/* HOVER for FOOTER */
+footer p:nth-child(2):hover {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
 /* ================= SEE MORE BUTTONS ================= */
 .see-more-btn {
   display: inline-block;
@@ -453,6 +521,10 @@ footer {
   text-decoration: none;
   font-weight: 600;
 }
+.see-more-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 198, 255, 0.4);
+}
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
@@ -462,7 +534,6 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media (max-width: 600px) {
   .grid,
   .project-grid,
@@ -472,5 +543,16 @@ footer {
 
   .two-column-section {
     flex-direction: column;
+  }
+}
+/* BETTER MOBILE VIEW */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+  
+  .profile-img {
+    width: 180px;
+    height: 180px;
   }
 }
